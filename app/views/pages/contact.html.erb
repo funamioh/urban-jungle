@@ -1,8 +1,8 @@
 <h1>Contact us</h1>
 
-<form action="/contact">
+<form action="/contact" method="get">
 <label for="member">Please type a name</label>
-<input id="member" name="member" type="text" placeholder="name">
+<input id="member" name="member" type="text" value="<%= params[:member] %>" placeholder="name">
 <input type="submit">
 </form>
 
