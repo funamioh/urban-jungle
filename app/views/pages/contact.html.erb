@@ -1,0 +1,17 @@
+<h1>Contact us</h1>
+
+<form action="/contact">
+<label for="member">Please type a name</label>
+<input id="member" name="member" type="text" placeholder="name">
+<input type="submit">
+</form>
+
+<ol>
+<% @members.each do |member| %>
+<li><%= member.capitalize %></li>
+<% end %>
+</ol>
+
+<h2>Please get in touch🎊</h2>
+
+<%= link_to("Go back home", root_path) %>
